@@ -1,0 +1,8 @@
+version: "3"
+services:
+    router:
+        image: nginx
+        volumes:
+            - "./router/routes.conf:/etc/nginx/conf.d/default.conf"
+        ports:
+            - "8080:80"
