@@ -1,0 +1,7 @@
+build:
+  docker:
+    galaxy: router/Dockerfile
+    gatekeeper: gatekeeper/Dockerfile
+  config:
+    RAILS_ENV: development
+    FOO: bar

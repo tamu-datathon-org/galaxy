@@ -1,11 +1,13 @@
 version: "3"
 services:
     router:
-        image: nginx
-        volumes:
-            - "./router/routes.conf:/etc/nginx/conf.d/default.conf"
+        build: 
+            context: "./router"
+            dockerfile: Dockerfile
         ports:
             - "8080:80"
+        environment:
+            - "PORT=8080"
         depends_on:
             - gatekeeper
     gatekeeper:
