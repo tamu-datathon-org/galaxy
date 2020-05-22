@@ -8,6 +8,7 @@ services:
             - "8080:80"
         environment:
             - "PORT=8080"
+            - "GATEKEEPER_URL=http://gatekeeper:3000"
         depends_on:
             - gatekeeper
     gatekeeper:
