@@ -2,7 +2,9 @@ name: Deploy to Production
 
 on:
   push:
-    branches: [ prod ]
+    branches:
+      - prod
+      - master
 env:
   galaxy_app: td-galaxy
   gatekeeper_app: td-gatekeeper
