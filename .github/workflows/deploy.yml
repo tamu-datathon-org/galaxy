@@ -3,7 +3,6 @@ name: Deploy to Production
 on:
   push:
     branches:
-      - prod
       - master
 env:
   galaxy_app: td-galaxy
