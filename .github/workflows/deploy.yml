@@ -1,0 +1,54 @@
+name: Deploy to Production
+
+on:
+  push:
+    branches: [ prod ]
+env:
+  galaxy_app: td-galaxy
+  gatekeeper_app: td-gatekeeper
+
+jobs:
+  deploy-router:
+    name: Deploy Galaxy Reverse Proxy
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Login to Heroku Container registry
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:login
+    - name: Push NGINX container
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:push web --app=${{ env.galaxy_app }} --arg GATEKEEPER_URL=https://${{ env.gatekeper_app }}.herokuapp.com
+      working-directory: ./router/
+    - name: Release NGINX container
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:release web --app=${{ env.galaxy_app }}
+      working-directory: ./router/
+  deploy-gatekeeper:
+    name: Deploy Gatekeeper
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+    - name: Login to Heroku Container registry
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:login
+    - name: Push Gatekeeper container
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:push web --app=${{ env.gatekeeper_app }}
+      working-directory: ./gatekeeper/
+    - name: Release Gatekeeper container
+      env: 
+        HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      run: heroku container:release web --app=${{ env.gatekeeper_app }}
+      working-directory: ./gatekeeper/
