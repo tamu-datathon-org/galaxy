@@ -31,7 +31,7 @@ jobs:
       run: heroku container:release web --app=${{ env.galaxy_app }}
       working-directory: ./router/
   deploy-gatekeeper:
-    name: Deploy Gatekeeper
+    name: Deploy Gatekeeper to heroku
     runs-on: ubuntu-latest
 
     steps:
