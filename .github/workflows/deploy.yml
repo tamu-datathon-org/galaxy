@@ -41,6 +41,15 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: true
+    - name: Checkout Secrets
+      uses: actions/checkout@v2
+      with:
+        repository: tamu-datathon-org/secrets
+        token: ${{ secrets.REPO_PAT }}
+        path: secrets
+    - name: Copy Secrets
+      run: |
+        cp secrets/gatekeeper.env.production gatekeeper/.env.production
     - name: Install Heroku CLI
       run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     - name: Login to Heroku Container registry
