@@ -37,7 +37,6 @@ jobs:
   deploy-gatekeeper:
     name: Deploy Gatekeeper to heroku
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
       with:
