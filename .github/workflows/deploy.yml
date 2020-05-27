@@ -51,6 +51,7 @@ jobs:
     - name: Copy Secrets
       run: |
         cp secrets/gatekeeper.env.production gatekeeper/.env.prod
+        ls gatekeeper/
     - name: Install Heroku CLI
       run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     - name: Login to Heroku Container registry
