@@ -26,7 +26,8 @@ jobs:
     - name: Push NGINX container
       env: 
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-      run: heroku container:push web --app=${{ env.galaxy_app }} --arg GATEKEEPER_URL=https://${{ env.gatekeper_app }}.herokuapp.com
+        GATEKEEPER_URL: https://td-gatekeeper.herokuapp.com
+      run: heroku container:push web --app=${{ env.galaxy_app }} --arg GATEKEEPER_URL=https://td-gatekeeper.herokuapp.com
       working-directory: ./router/
     - name: Release NGINX container
       env: 
@@ -49,7 +50,7 @@ jobs:
         path: secrets
     - name: Copy Secrets
       run: |
-        cp secrets/gatekeeper.env.production gatekeeper/.env.production
+        cp secrets/gatekeeper.env.production gatekeeper/.env.prod
     - name: Install Heroku CLI
       run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
     - name: Login to Heroku Container registry
