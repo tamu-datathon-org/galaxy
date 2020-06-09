@@ -1,0 +1,6 @@
+{
+    "rewrites": [
+        { "source": "/auth(.*)", "destination": "https://td-gatekeeper.herokuapp.com$1" },
+        { "source": "/(.*)", "destination": "https://gigabowser.now.sh/$1" }
+    ]
+}
