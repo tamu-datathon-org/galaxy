@@ -1,0 +1,33 @@
+name: Deploy Obos to Heroku
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  HEROKU_APP_NAME: td-obos
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true
+      - name: Install Heroku CLI
+        run: curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+      - name: Login to Heroku Container registry
+        env: 
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:login
+      - name: Push Obos Container
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:push -a $HEROKU_APP_NAME web
+        working-directory: ./Ouroboros/
+      - name: Release Obos Container
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:release -a $HEROKU_APP_NAME web
+        working-directory: ./Ouroboros/
