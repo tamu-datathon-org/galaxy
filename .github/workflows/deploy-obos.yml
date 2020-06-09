@@ -9,7 +9,8 @@ env:
   HEROKU_APP_NAME: td-obos
 
 jobs:
-  deploy:
+  deploy-obos:
+    name: Deploy Obos to heroku
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
