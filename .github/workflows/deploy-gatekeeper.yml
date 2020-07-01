@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - master
-      - prod
+
 env:
   galaxy_app: td-galaxy
   gatekeeper_app: td-gatekeeper
