@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - prod
 
 env:
   HEROKU_APP_NAME: td-obos
