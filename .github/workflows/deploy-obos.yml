@@ -4,7 +4,8 @@ on:
   push:
     branches:
       - master
-
+    paths:
+      - Ouroboros/**
 env:
   HEROKU_APP_NAME: td-obos
 
