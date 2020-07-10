@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - master
-    paths:
-      - gatekeeper/**
 
 env:
   galaxy_app: td-galaxy
