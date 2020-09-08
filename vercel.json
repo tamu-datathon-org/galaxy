@@ -2,6 +2,7 @@
     "rewrites": [
         { "source": "/auth(.*)", "destination": "https://td-gatekeeper.herokuapp.com$1" },	
         { "source": "/apply(.*)", "destination": "https://td-obos.herokuapp.com/apply$1" },
+        { "source": "/forms(.*)", "destination": "https://pivot.tamudatathon.vercel.app/forms$1" },
         { "source": "/events(.*)", "destination": "https://portal.tamudatathon.now.sh/events$1" },
         { "source": "/(.*)", "destination": "https://gigabowser.now.sh/$1" }
     ]
