@@ -4,6 +4,7 @@
         { "source": "/apply(.*)", "destination": "https://td-obos.herokuapp.com/apply$1" },
         { "source": "/forms(.*)", "destination": "https://pivot.tamudatathon.vercel.app/forms$1" },
         { "source": "/events(.*)", "destination": "https://portal.tamudatathon.now.sh/events$1" },
+        { "source": "/stats", "destination": "http://datastudio.google.com/u/0/reporting/5fe03a3a-1146-4ecd-89da-389b518a950d/page/alGgB" },
         { "source": "/(.*)", "destination": "https://gigabowser.now.sh/$1" }
     ]
 }
