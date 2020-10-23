@@ -2,7 +2,10 @@
   galaxy :milky_way:
 </h1>
 
-<p align="center">Deployment environment for all TAMU datathon apps.</p>
+<p align="center">Request entrypoint for all TAMU datathon apps. Also manages builds for gatekeeper and obos.</p>
+
+## Architecture 🧪
+<p><img src="architecture.png" width="100%" /></p>
 
 ## Installation :computer:
 1. Clone the repo: `$ git clone --recurse-submodules https://github.com/tamu-datathon-org/galaxy.git`
