@@ -4,6 +4,12 @@
 
 <p align="center">Request entrypoint for all TAMU datathon apps. Also manages builds for gatekeeper and obos.</p>
 
+<p align="center">
+  <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
+    <img src="https://tamudatathon.com/static/img/sponsors/powered-by-vercel.svg" height="36px" alt="Powered by Vercel" />
+  </a>
+</p>
+
 ## Architecture 🧪
 <p><img src="architecture.png" width="100%" /></p>
 
@@ -16,11 +22,3 @@
 ```bash
 $ docker-compose up
 ```
-
----
-
-<p align="center">
-  <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
-    TAMU Datathon is powered by </br><img src="https://tamudatathon.com/static/img/sponsors/vercel_dark.svg" height="24px" alt="Vercel" />
-  </a>
-</p>
