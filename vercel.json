@@ -11,6 +11,7 @@
         { "source": "/(.*)", "destination": "https://gigabowser.now.sh/$1" }
     ],
     "redirects": [
-        { "source": "/join", "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdLf4MrOR_r0hDLGS8wY5fH5XMwqRc5JV399cFxVOfZNDrvUg/viewform" }
+        { "source": "/join", "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdLf4MrOR_r0hDLGS8wY5fH5XMwqRc5JV399cFxVOfZNDrvUg/viewform" },
+        { "source": "/informational", "destination": "/events/activities/informational" }
     ]
 }
