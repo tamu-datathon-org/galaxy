@@ -2,13 +2,13 @@
     "rewrites": [
         { "source": "/auth(.*)", "destination": "https://td-gatekeeper.herokuapp.com$1" },	
         { "source": "/apply(.*)", "destination": "https://td-obos.herokuapp.com/apply$1" },
-        { "source": "/forms(.*)", "destination": "https://pivot.tamudatathon.vercel.app/forms$1" },
-        { "source": "/events(.*)", "destination": "https://portal.tamudatathon.now.sh/events$1" },
+        { "source": "/forms(.*)", "destination": "https://pivot-tamudatathon.vercel.app/forms$1" },
+        { "source": "/events(.*)", "destination": "https://portal-tamudatathon.vercel.app/events$1" },
         { "source": "/koth/admin(.*)", "destination": "http://ec2-34-207-156-63.compute-1.amazonaws.com:4000/koth/admin$1" },
-        { "source": "/koth(.*)", "destination": "https://koth.tamudatathon.vercel.app/koth$1" },
+        { "source": "/koth(.*)", "destination": "https://koth-tamudatathon.vercel.app/koth$1" },
         { "source": "/projects(.*)", "destination": "https://tamu-datathon-org.github.io/expo$1" },
         { "source": "/stats", "destination": "https://datastudio.google.com/u/0/reporting/5fe03a3a-1146-4ecd-89da-389b518a950d/page/alGgB" },
-        { "source": "/(.*)", "destination": "https://gigabowser.now.sh/$1" }
+        { "source": "/(.*)", "destination": "https://gigabowser-tamudatathon.vercel.app/$1" }
     ],
     "redirects": [
         { "source": "/join", "destination": "https://docs.google.com/forms/d/e/1FAIpQLSdLf4MrOR_r0hDLGS8wY5fH5XMwqRc5JV399cFxVOfZNDrvUg/viewform" },
