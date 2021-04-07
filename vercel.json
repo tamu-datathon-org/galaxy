@@ -7,7 +7,7 @@
         { "source": "/koth/admin(.*)", "destination": "http://ec2-34-207-156-63.compute-1.amazonaws.com:4000/koth/admin$1" },
         { "source": "/koth(.*)", "destination": "https://koth-tamudatathon.vercel.app/koth$1" },
         { "source": "/projects(.*)", "destination": "https://tamu-datathon-org.github.io/expo$1" },
-        { "source": "/mailing(.*)", "destination": "https://mercury-sooty.vercel.app/mailing$1" }
+        { "source": "/mailing(.*)", "destination": "https://mercury-sooty.vercel.app/mailing$1" },
         { "source": "/stats", "destination": "https://datastudio.google.com/u/0/reporting/5fe03a3a-1146-4ecd-89da-389b518a950d/page/alGgB" },
         { "source": "/(.*)", "destination": "https://gigabowser-tamudatathon.vercel.app/$1" }
     ],
