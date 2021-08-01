@@ -1,6 +1,7 @@
 {
     "rewrites": [
-        { "source": "/auth(.*)", "destination": "https://td-gatekeeper.herokuapp.com$1" },	
+        { "source": "/auth(.*)", "destination": "https://td-gatekeeper.herokuapp.com$1" },
+        { "source": "/apply(.*)", "destination": "https://td-obos.herokuapp.com/apply$1" },
         { "source": "/forms(.*)", "destination": "https://pivot-tamudatathon.vercel.app/forms$1" },
         { "source": "/events(.*)", "destination": "https://portal-ivory.vercel.app/events$1" },
         { "source": "/koth/admin(.*)", "destination": "http://ec2-34-207-156-63.compute-1.amazonaws.com:4000/koth/admin$1" },
