@@ -1,6 +1,7 @@
 name: Deploy Gatekeeper to Heroku
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
