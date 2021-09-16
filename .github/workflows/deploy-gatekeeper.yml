@@ -14,7 +14,7 @@ jobs:
   deploy-gatekeeper:
     name: Deploy Gatekeeper to heroku
     runs-on: ubuntu-latest
-    if: "contains(github.event.head_commit.message, '[deploy-gatekeeper]')"
+    if: "contains(github.event.head_commit.message, '[deploy-gatekeeper]') || github.event_name == 'workflow_dispatch'"
     steps:
     - uses: actions/checkout@v2
       with:
