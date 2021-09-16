@@ -1,6 +1,3 @@
 [submodule "gatekeeper"]
 	path = gatekeeper
 	url = https://github.com/tamu-datathon-org/gatekeeper.git
-[submodule "Ouroboros"]
-	path = Ouroboros
-	url = https://github.com/tamu-datathon-org/Ouroboros.git
