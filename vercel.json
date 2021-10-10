@@ -6,6 +6,7 @@
         { "source": "/bulletin/api(.*)", "destination": "https://bulletin-server.vercel.app/bulletin/api$1" },
         { "source": "/bulletin(.*)", "destination": "https://bulletin-client.vercel.app/bulletin$1" },
         { "source": "/forms(.*)", "destination": "https://pivot-tamudatathon.vercel.app/forms$1" },
+        { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
         { "source": "/passport(.*)", "destination": "https://passport-xi.vercel.app/passport$1" },
         { "source": "/events(.*)", "destination": "https://portal-ivory.vercel.app/events$1" },
         { "source": "/koth/admin(.*)", "destination": "http://ec2-34-207-156-63.compute-1.amazonaws.com:4000/koth/admin$1" },
