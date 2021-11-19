@@ -20,7 +20,7 @@
         { "source": "/(.*)", "destination": "https://gigabowser.vercel.app/$1" }
     ],
     "redirects": [
-        { "source": "/join", "destination": "https://forms.gle/V4z4y269bNNrLuuD9", "permanent: "false" },
+        { "source": "/join", "destination": "https://bit.ly/JoinTDTeam", "permanent: "false" },
         { "source": "/informational", "destination": "/events/activities/informational" },
         { "source": "/discord", "destination": "/guild", "permanent": false }
     ]
