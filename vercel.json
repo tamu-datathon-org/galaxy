@@ -4,6 +4,7 @@
         { "source": "/auth/(.*)", "destination": "https://gk.tamudatathon.com/$1" },
         { "source": "/apply(.*)", "destination": "https://obos.tamudatathon.com/apply$1" },
         { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
+        { "source": "/docs(.*)", "destination": "https://datasaurus-omega.vercel.app/docs$1" },
         { "source": "/qr(.*)", "destination": "https://qr-wheat.vercel.app/qr$1" },
         { "source": "/bulletin/api(.*)", "destination": "https://bulletin-server.vercel.app/bulletin/api$1" },
         { "source": "/bulletin(.*)", "destination": "https://bulletin-client.vercel.app/bulletin$1" },
@@ -16,7 +17,6 @@
         { "source": "/nexus(.*)", "destination": "https://nexus-tau.vercel.app/nexus$1" },
         { "source": "/guild(.*)", "destination": "https://harmonia-nine.vercel.app/guild$1" },
         { "source": "/mailing(.*)", "destination": "https://mercury-sooty.vercel.app/mailing$1" },
-        { "source": "/docs(.*)", "destination": "https://datasaurus-omega.vercel.app/$1" },
         { "source": "/stats", "destination": "https://datastudio.google.com/u/0/reporting/5fe03a3a-1146-4ecd-89da-389b518a950d/page/alGgB" },
         { "source": "/(.*)", "destination": "https://gigabowser.vercel.app/$1" }
     ],
