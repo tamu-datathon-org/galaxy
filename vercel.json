@@ -16,6 +16,7 @@
         { "source": "/nexus(.*)", "destination": "https://nexus-tau.vercel.app/nexus$1" },
         { "source": "/guild(.*)", "destination": "https://harmonia-nine.vercel.app/guild$1" },
         { "source": "/mailing(.*)", "destination": "https://mercury-sooty.vercel.app/mailing$1" },
+        { "source": "/docs(.*)", "destination": "https://datasaurus-omega.vercel.app/$1" },
         { "source": "/stats", "destination": "https://datastudio.google.com/u/0/reporting/5fe03a3a-1146-4ecd-89da-389b518a950d/page/alGgB" },
         { "source": "/(.*)", "destination": "https://gigabowser.vercel.app/$1" }
     ],
