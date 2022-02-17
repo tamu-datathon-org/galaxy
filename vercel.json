@@ -5,6 +5,7 @@
         { "source": "/apply(.*)", "destination": "https://obos.tamudatathon.com/apply$1" },
         { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
         { "source": "/docs(.*)", "destination": "https://datasaurus-omega.vercel.app/docs$1" },
+        { "source": "/docs/(.*)", "destination": "https://datasaurus-omega.vercel.app/$1" },
         { "source": "/qr(.*)", "destination": "https://qr-wheat.vercel.app/qr$1" },
         { "source": "/bulletin/api(.*)", "destination": "https://bulletin-server.vercel.app/bulletin/api$1" },
         { "source": "/bulletin(.*)", "destination": "https://bulletin-client.vercel.app/bulletin$1" },
