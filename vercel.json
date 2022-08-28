@@ -3,6 +3,7 @@
         { "source": "/assets/(.*)", "destination": "https://datasaurus-omega.vercel.app/assets/$1" },
         { "source": "/auth", "destination": "https://gk.tamudatathon.com" },
         { "source": "/auth/(.*)", "destination": "https://gk.tamudatathon.com/$1" },
+        { "source": "/apply(.*)", "destination": "https://td-obos-2022.herokuapp.com/apply$1" },
         { "source": "/docs/img/(.*)", "destination": "https://datasaurus-omega.vercel.app/img/$1" },
         { "source": "/docs(.*)", "destination": "https://datasaurus-omega.vercel.app/docs$1" },
         { "source": "/qr(.*)", "destination": "https://qr-wheat.vercel.app/qr$1" },
