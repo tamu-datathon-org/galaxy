@@ -24,7 +24,6 @@
     "redirects": [
         { "source": "/join", "destination": "https://bit.ly/JoinTDTeam", "permanent": false },
         { "source": "/informational", "destination": "/events/activities/informational" },
-        { "source": "/discord", "destination": "/guild", "permanent": false },
-        { "source": "/volunteer", "destination": "https://www.signupgenius.com/go/10c0e45aaa92ba1fcc43-volunteermentor", "permanent": false }
+        { "source": "/discord", "destination": "/guild", "permanent": false }
     ]
 }
