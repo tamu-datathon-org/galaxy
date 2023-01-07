@@ -1,8 +1,8 @@
 {
     "rewrites": [
         { "source": "/assets/(.*)", "destination": "https://datasaurus-omega.vercel.app/assets/$1" },
-        { "source": "/auth", "destination": "https://gatekeeper-prwzdpdl4-tamudatathon.vercel.app/" },
-        { "source": "/auth/(.*)", "destination": "https://gatekeeper-prwzdpdl4-tamudatathon.vercel.app/$1" },
+        { "source": "/auth", "destination": "https://gatekeeper.vercel.app/" },
+        { "source": "/auth/(.*)", "destination": "https://gatekeeper.vercel.app/$1" },
         { "source": "/apply(.*)", "destination": "https://td-obos-2022.herokuapp.com/apply$1" },
         { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
         { "source": "/docs/img/(.*)", "destination": "https://datasaurus-omega.vercel.app/img/$1" },
