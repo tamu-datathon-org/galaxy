@@ -20,7 +20,7 @@
         { "source": "/guild(.*)", "destination": "https://harmonia-nine.vercel.app/guild$1" },
         { "source": "/mailing(.*)", "destination": "https://mercury-sooty.vercel.app/mailing$1" },
         { "source": "/stats", "destination": "https://datastudio.google.com/u/0/reporting/5fe03a3a-1146-4ecd-89da-389b518a950d/page/alGgB" },
-        { "source": "/help(.*)", "destination": "helpqueue.vercal.app$1" },
+        { "source": "/help(.*)", "destination": "https://helpqueue.vercel.app$1" },
         { "source": "/(.*)", "destination": "https://2022.tamudatathon.com/$1" }
     ],
     "redirects": [
