@@ -3,7 +3,6 @@
         { "source": "/assets/(.*)", "destination": "https://datasaurus-omega.vercel.app/assets/$1" },
         { "source": "/auth", "destination": "https://gatekeeper.vercel.app/" },
         { "source": "/auth/(.*)", "destination": "https://gatekeeper.vercel.app/$1" },
-        { "source": "/apply(.*)", "destination": "https://aegis-three.vercel.app/apply$1" },
         { "source": "/challenges(.*)", "destination": "https://challenges-ochre.vercel.app/challenges$1" },
         { "source": "/docs/img/(.*)", "destination": "https://datasaurus-omega.vercel.app/img/$1" },
         { "source": "/docs(.*)", "destination": "https://datasaurus-omega.vercel.app/docs$1" },
